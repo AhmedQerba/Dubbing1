@@ -122,10 +122,10 @@ with open(f"{srt_aud_file}_ar.srt",mode='w') as sub_output:
 from subtoaudio import SubToAudio
 
 # Initialize SubToAudio with a Coqui TTS model (e.g., English)
-sub = SubToAudio(model_name="tts_models/multilingual/multi-dataset/xtts_v2", )
+#sub = SubToAudio(model_name="tts_models/multilingual/multi-dataset/xtts_v2", )
 
 #load pretrained model
-# sub = SubToAudio(config_path="/content/drive/MyDrive/tts_models/config.json" , model_path='/content/drive/MyDrive/tts_models/')
+sub = SubToAudio(config_path="tts_models/config.json" , model_path='tts_models/')
 
 sub_file_name = f'{srt_aud_file}_ar.srt'
 
