@@ -12,7 +12,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Download the zip file from Google Drive
-RUN gdown download "https://drive.google.com/uc?id=1X76smI1ZPtaVXWqBBIxA4OWGNeBuuhQ9" -O model.zip
+RUN gdown "https://drive.google.com/uc?id=1X76smI1ZPtaVXWqBBIxA4OWGNeBuuhQ9" -O model.zip
 
 # Extract the contents of the zip file
 RUN unzip model.zip -d tts_models && \
