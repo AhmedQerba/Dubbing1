@@ -125,7 +125,7 @@ from subtoaudio import SubToAudio
 #sub = SubToAudio(model_name="tts_models/multilingual/multi-dataset/xtts_v2", )
 
 #load pretrained model
-sub = SubToAudio(config_path="tts_models/config.json" , model_path='tts_models/')
+sub = SubToAudio(config_path="tts_models/content/drive/MyDrive/tts_models/config.json" , model_path='tts_models/content/drive/MyDrive/tts_models/')
 
 sub_file_name = f'{srt_aud_file}_ar.srt'
 
