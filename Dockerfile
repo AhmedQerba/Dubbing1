@@ -2,10 +2,21 @@
 FROM python:3.9-slim
 
 # Install git
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    unzip && \
+    rm -rf /var/lib/apt/lists/* && \
+    pip install gdown
 
 # Set the working directory in the container
 WORKDIR /app
+
+# Download the zip file from Google Drive
+RUN gdown download https://drive.google.com/uc?id=YOUR_ZIP_FILE_ID -O model.zip
+
+# Extract the contents of the zip file
+RUN unzip model.zip -d tts_models && \
+    rm model.zip
 
 # Copy the current directory contents into the container at /app
 COPY . /app
