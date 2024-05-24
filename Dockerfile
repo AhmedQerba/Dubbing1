@@ -17,4 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Command to run your application (replace 'main.py' with your script)
-CMD ["python", "dubbing.py"]
+CMD ["python", "dubbing.py", "--link", "https://www.youtube.com/watch?v=fsoi6faumrw"]
