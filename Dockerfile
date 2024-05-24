@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     unzip && \
     rm -rf /var/lib/apt/lists/* && \
+    apt-get install -y git \
     pip install gdown
 
 # Set the working directory in the container
