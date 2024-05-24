@@ -1,4 +1,3 @@
-gdown
 moviepy
 pytube
 git+https://github.com/openai/whisper.git
