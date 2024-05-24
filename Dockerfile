@@ -4,7 +4,7 @@ FROM python:3.9-slim
 # Install git
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    apt-get install -y git &&\
+    git \
     unzip && \
     rm -rf /var/lib/apt/lists/* && \
     pip install gdown
